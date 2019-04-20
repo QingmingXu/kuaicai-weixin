@@ -1,0 +1,13 @@
+<!--pages/setaddress/setaddress.wxml-->
+<view wx:if='{{!isshow}}' class='container'>
+  <view class='tip'>还没有设置收货地址～～</view>
+  <view class='add-address'>
+    <view class='add-address-button' bindtap='onToAdd'>添加收货地址</view>
+  </view>
+</view>
+<view wx:if='{{isshow}}' class='container'>
+  <view class='tip'>当前收货地址：{{user_address}}</view>
+  <view class='add-address'>
+    <view class='add-address-button' bindtap='onToAdd'>修改收货地址</view>
+  </view>
+</view>

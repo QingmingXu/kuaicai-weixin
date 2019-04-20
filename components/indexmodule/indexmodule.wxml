@@ -1,0 +1,15 @@
+<!--components/indexmodule/indexmodule.wxml-->
+<view class='module-group'>
+    <view class='module-top'>
+        <view class='module-title'>{{title}}</view>
+        <navigator class='module-more' url='{{moreurl}}'>更多</navigator>
+    </view>
+    <scroll-view class='module-scroll-view' scroll-x='{{true}}'>
+        <navigator wx:for="{{items}}" wx:key="{{item.menu_id}}" class='scroll-view-item' url='/pages/detail/detail?id={{item.menu_id}}&type={{item.menu_type}}'>
+            <view class='thumbnail-group'>
+                <image class='thumbnail' src='http://127.0.0.1:5000{{item.menu_image_url_2}}'></image>
+            </view>
+            <view class='scroll-view-item-title'>{{item.menu_name}}</view>
+        </navigator>
+    </scroll-view>
+</view>

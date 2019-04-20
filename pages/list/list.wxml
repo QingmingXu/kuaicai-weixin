@@ -1,0 +1,5 @@
+<!--pages/list/list.wxml-->
+<searchbar isnavigator='{{true}}'></searchbar>
+<view class='container'>
+  <item wx:for="{{items}}" wx:key="{{item.menu_id}}" item='{{item}}' detailurl='/pages/detail/detail?id={{item.menu_id}}&type={{item.menu_type}}'></item>
+</view>

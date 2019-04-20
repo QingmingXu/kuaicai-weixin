@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<searchbar isnavigator="{{true}}"></searchbar>
+
+<!--主食-->
+<indexmodule title='主食' items='{{staples}}' moreurl='/pages/list/list?type=主食' itemtype='主食'></indexmodule>
+
+<!--小食-->
+<indexmodule title='小食' items='{{snacks}}' moreurl='/pages/list/list?type=小食' itemtype='小食'></indexmodule>
+
+<!--饮品-->
+<indexmodule title='饮品' items='{{drinks}}' moreurl='/pages/list/list?type=饮品' itemtype='饮品'></indexmodule>

@@ -1,0 +1,10 @@
+<!--components/item/item.wxml-->
+<navigator wx:if='{{item}}' class='item' url='{{detailurl}}'>
+    <view class='thumbnail-group'>
+        <image class='thumbnail' src='http://127.0.0.1:5000{{item.menu_image_url_2}}'></image>
+    </view>
+    <view class='item-title'>{{item.menu_name}}</view>
+</navigator>
+
+<view wx:else class='item-null'></view>
+

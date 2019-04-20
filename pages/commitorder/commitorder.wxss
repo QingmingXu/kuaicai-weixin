@@ -1,0 +1,144 @@
+/* pages/commitorder/commitorder.wxss */
+.address-info{
+  background-color: ghostwhite;
+  padding: 20rpx 80rpx;
+  font-size: 25rpx; 
+}
+
+.address-info .address-info-more{
+  color: gray;
+}
+
+.stepper {
+	width: 80px;
+	height: 26px;
+	/*给主容器设一个边框*/
+	border: 1px solid #ccc;
+	border-radius: 3px;
+  margin-left: 10rpx;
+}
+
+.stepper .stepper-text{
+  font-size: 30rpx;
+}
+ 
+/*加号和减号*/
+.stepper text {
+	width: 19px;
+	line-height: 26px;
+	text-align: center;
+	float: left;
+}
+ 
+/*数值*/
+.stepper input {
+	width: 40px;
+	height: 26px;
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 12px;
+	/*给中间的input设置左右边框即可*/
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+ 
+/*普通样式*/
+.stepper .normal{
+	color: black;
+}
+ 
+/*禁用样式*/
+.stepper .disabled{
+	color: #ccc;
+}
+
+.buy-title{
+  margin-top: 100rpx;
+  margin-left: 5rpx; 
+}
+
+.buy-content{
+  display: flex;
+  background-color: ghostwhite;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx; 
+}
+
+.buy-content .buy-image{
+  margin-left: 10rpx;
+}
+
+.buy-content .buy-image image{
+  height: 150rpx;
+  width: 150rpx;
+}
+
+.buy-content .buy-name{
+  font-size: 25rpx;
+  margin-top: 50rpx;
+  margin-left: 5rpx;
+}
+
+.buy-content .one-price{
+  font-size: 25rpx;
+  margin-top: 50rpx;
+  margin-left: 20rpx;
+  margin-right: 100rpx;
+}
+
+.buy-content .stepper-group{
+  margin-top: 40rpx; 
+  display: flex;
+}
+
+.buy-content .stepper-group .stepper-title{
+  margin-top: 10rpx;
+  font-size: 25rpx;
+}
+
+.operation-group{
+  display: flex;
+  justify-content: center;
+  margin-top: 430rpx;
+}
+
+.operation-group .cancel{
+  border: solid 3rpx;
+  border-radius: 12rpx;
+  background-color: #FF4500;
+  font-size: 35rpx;
+  color: white;
+  padding: 13rpx 13rpx;
+  margin-right: 100rpx;
+}
+
+.operation-group .sure{
+  border: solid 3rpx;
+  border-radius: 12rpx;
+  background-color: #FF4500;
+  font-size: 35rpx;
+  color: white;
+  padding: 13rpx 13rpx;
+  margin-left: 100rpx;
+}
+
+.pay-group{
+  margin-top: 100rpx; 
+  display: flex;
+  font-size: 30rpx;
+  margin-left: 80rpx;
+}
+
+.pay-group .pay-title{
+  margin-top: 5rpx;
+}
+
+.pay-group .pay-way-group{
+  display: flex;
+  margin-left: 20rpx;
+}
+
+.pay-group .pay-way-group .pay-face{
+  margin-left: 30rpx;
+}

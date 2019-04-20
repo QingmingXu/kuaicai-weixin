@@ -1,0 +1,25 @@
+/* components/item/item.wxss */
+.item {
+  margin: 20rpx;
+  height: 300rpx;
+  width: 240rpx;
+}
+
+.item .thumbnail-group image {
+  height: 200rpx;
+  width: 240rpx;
+}
+
+.item .item-title {
+  width: 100%;
+  font-size: 22rpx;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden; 
+}
+
+.item-null {
+  margin: 20rpx;
+  height: 300rpx;
+  width: 240rpx;
+}

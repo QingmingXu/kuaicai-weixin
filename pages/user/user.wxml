@@ -1,0 +1,28 @@
+<!--pages/user/user.wxml-->
+<view class='container'>
+  <view wx:if="{{!isshow}}" class='header-group'>
+    <view class='header-text' bindtap='onSpecialLogin'>
+      <view class='text-1'>点击登录</view>
+      <view class='text-2'>登录后可以正常使用快菜</view>
+    </view>
+    <view class='header-img'>
+      <image src='../../images/user.png'></image>
+    </view>
+  </view>
+  <view wx:if="{{isshow}}" class='header-group'>
+    <view class='header-text' bindtap='onSpecialLogin'>
+      <view class='text-2'>欢迎使用</view>
+    </view>
+    <view class='header-img'>
+      <image src='{{user_image_url}}'></image>
+    </view>
+  </view>
+</view>
+<view wx:if="{{isshow}}" class='operation-group'>
+  <view class='set' bindtap='onSetAddress' data-id='{{user_id}}'>  我的收货地址</view>
+  <view class='order'>  我的订单</view>
+  <view class='car'>  我的购物车</view>
+</view>
+<view wx:if="{{isshow}}" class='footer'>
+  <view class='log-out' bindtap='onLogout'>退出登录</view>
+</view>

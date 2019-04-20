@@ -1,0 +1,30 @@
+<!--pages/order/order.wxml-->
+<view class='container'>
+  <view class='header-tap'>
+    <view class='all' bindtap='onAll'>全部订单</view>
+    <view class='wait-pay' bindtap='onWaitPay'>待支付</view>
+    <view class='wait-confirm' bindtap='onWaitConfirm'>待收货</view>
+    <view class='finish' bindtap='onFinish'>已完成</view>
+    <view class='cancel' bindtap='onCancel'>已取消</view>
+  </view>
+  <view wx:for='{{orders}}' wx:key='{{item.order_id}}' class='order-group' url='#'>
+    <navigator class='order-group-item'>
+      <view class='title'>快菜外卖</view>
+      <view class='content'>{{item.order_content}}</view>
+      <view class='price'>金额：{{item.order_price}}(元)</view>
+      <view class='pay-way'>{{item.pay_way}}</view>
+      <view class='time'>下单时间：{{item.order_time}}</view>
+      <view wx:if='{{item.pay_way == "货到付款" && item.order_status == "正常" && item.go_status != "配送成功"}}' class='tip-face'>预计60分钟内送达，请耐心等待</view>
+      <view wx:if='{{item.pay_way == "货到付款" && item.order_status == "已取消"}}' class='tip-cancel'>已取消</view>
+      <view wx:if='{{item.pay_way == "货到付款" && item.order_status == "正常" && item.go_status == "配送成功"}}' class='tip-finish'>已完成</view>
+      <view wx:if='{{item.pay_way == "在线支付" && item.order_status == "正常"}}' class='tip-online'>{{item.pay_status}}</view>
+      <view wx:if='{{item.pay_way == "在线支付" && item.order_status == "已取消"}}' class='tip-online'>已取消</view>
+    </navigator>
+    <view class='do-group'>
+      <view class='cancel-order' wx:if='{{item.order_status == "正常" && item.go_status != "配送成功"}}' bindtap='onCancelOrder' data-id='{{item.order_id}}'>取消订单</view>
+      <view wx:if='{{item.pay_way == "货到付款" && item.order_status == "正常" && item.go_status != "配送成功"}}' class='confrim-order' bindtap='onConfrimOrder' data-id='{{item.order_id}}'>确认收货</view>
+      <view wx:if='{{item.pay_way == "在线支付" && item.order_status == "正常"}}' class='pay'>付款</view>
+    </view>
+  </view>
+</view>
+

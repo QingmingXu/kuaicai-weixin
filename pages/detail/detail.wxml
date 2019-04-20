@@ -1,0 +1,48 @@
+<!--pages/de tail/de tail.wxml-->
+<view class='detail-group'>
+  <view class='thumbnail-group'>
+    <image class='thumbnail' src='http://127.0.0.1:5000{{image_url}}'></image>
+  </view>
+  <view class='text-group'>
+    <view class='left'>
+      <view class='menu-name'>当前商品:{{name}}</view>
+      <view class='menu-date'>{{date}}上架</view>
+    </view>
+    <view class='right'>
+      <view class='menu-price'>售价:{{price}}(元)</view>
+      <view class='menu-num'>剩余数量:{{num}}(份)</view>
+    </view>
+  </view>
+  <view class='menu-info-title'>商家描述</view>
+  <view class='menu-info'>{{info}}</view>
+
+  <view class='stepper-group'>
+    <view class='stepper-title'>数量</view>
+    <view class="stepper">
+	    <!-- 减号 -->
+	    <text class="{{can_minus}}" bindtap="onBindMinus">-</text>
+	    <!-- 数值 -->
+	    <input type="number" bindchange="onBindManual" value="{{select_num}}" />
+	    <!-- 加号 -->
+	    <text class="normal" bindtap="onBindPlus">+</text>
+    </view>
+  </view>
+  <view class='buy-way-group'>
+    <view class='buy-now' bindtap='onBuy'>立即购买</view>
+    <!--navigator class='buy-now' url='/pages/commitorder/commitorder?menu_id={{id}}&select_num={{select_num}}'>立即购买</navigator-->
+    <view class='put-in-car' bindtap='onPutInCart' data-id='{{id}}' data-name='{{name}}' data-selectnum='{{select_num}}'>加入购物车</view>
+  </view>
+  <!--view class='pay-group'>
+    <view class='pay-title'>支付方式</view>
+    <radio-group class='pay-way-group' bindchange="radioChange">
+      <label class='radio'>
+        <radio class='pay-online' value='online'/>
+        在线支付
+      </label>
+      <label class='radio'>
+        <radio class='pay-face' value='face' checked='true'/>
+        货到付款
+      </label>
+    </radio-group>
+  </view-->
+</view>

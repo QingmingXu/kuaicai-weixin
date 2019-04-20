@@ -1,0 +1,22 @@
+<!--pages/shoppingcart/shoppingcart.wxml-->
+<view wx:for="{{cart_list}}" class='shoppingcart-group'>
+  <view class='shoppingcart-group-item'>
+    <view class='item-image'>
+      <image src='http://127.0.0.1:5000{{item.menu_image_url}}'></image>
+    </view>
+    <view class='item-name'>{{item.menu_name}}</view>
+    <view class='item-price'>单价：{{item.menu_price}}(元)</view>
+    <view class='stepper-group'>
+      <view class="stepper">
+	      <text class="{{can_minus}}" bindtap="onBindMinus">-</text>
+	      <input type="number" bindchange="onBindManual" value="{{item.select_num}}" />
+
+	      <text class="normal" bindtap="onBindPlus">+</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='operation-group'>
+  <view class='clear'>清除</view>
+  <view class='place-on-order'>下单</view>
+</view>

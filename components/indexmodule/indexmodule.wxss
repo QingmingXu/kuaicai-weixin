@@ -1,0 +1,50 @@
+/* components/indexmodule/indexmodule.wxss */
+.module-group {
+  padding: 30rpx;
+  background-color: white;
+}
+
+.module-group .module-top {
+  font-size: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.module-top .module-title {
+  color: #494949;
+}
+
+.module-top .module-more {
+  color: #4169E1;
+}
+
+.module-group .module-scroll-view {
+  margin-top: 12rpx;
+  width: 100%;
+  height: 300rpx;
+  white-space: nowrap;
+}
+
+.module-scroll-view .scroll-view-item {
+  margin-right: 30rpx; 
+  height: 100%;
+  width: 235rpx;
+  display: inline-block;
+}
+
+.module-scroll-view .scroll-view-item:last-of-type {
+  margin-right: 0;
+}
+
+.scroll-view-item .thumbnail-group image {
+  height: 200rpx;
+  width: 235rpx;
+}
+
+.module-scroll-view .scroll-view-item .scroll-view-item-title {
+  width: 100%;
+  font-size: 22rpx;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden; 
+}

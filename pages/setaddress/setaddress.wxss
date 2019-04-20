@@ -1,0 +1,19 @@
+/* pages/setaddress/setaddress.wxss */
+.container{
+  padding: 20rpx 20rpx;
+}
+
+.container .add-address{
+  margin-top: 900rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.container .add-address .add-address-button{
+  border: solid 3rpx;
+  border-radius: 20rpx;
+  background-color: #FF4500;
+  font-size: 35rpx;
+  color: white;
+  padding: 50rpx 50rpx;
+}

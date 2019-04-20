@@ -1,0 +1,122 @@
+/* pages/order/order.wxss */
+.container{
+  background-color: #F8F8FF;
+}
+
+.container .header-tap{
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  font-size: 28rpx;
+  margin-top: 5rpx; 
+}
+
+.container .order-group{
+  margin-top: 10rpx; 
+}
+
+.container .order-group .order-group-item{
+    background-color: white;
+}
+
+.order-group .order-group-item .title{
+  margin-left: 10rpx;
+  font-size: 30rpx;
+  color: gray;
+}
+
+.order-group .order-group-item .content{
+  margin-top: 20rpx;
+  padding-left: 30rpx;
+  padding-top: 10rpx;
+  padding-bottom: 8rpx; 
+  font-size: 32rpx;
+  background-color: #F8F8FF;
+}
+
+.order-group .order-group-item .price{
+  padding-left: 580rpx;
+  font-size: 25rpx;
+  background-color:  #F8F8FF;
+}
+
+.order-group .order-group-item .pay-way{
+  padding-left: 635rpx;
+  font-size: 25rpx;
+  background-color:  #F8F8FF;
+}
+
+.order-group .order-group-item .time{
+  padding-left: 252rpx;
+  font-size: 25rpx;
+  background-color:  #F8F8FF;
+}
+
+.order-group .order-group-item .tip-face{
+  padding-left: 398rpx;
+  padding-bottom: 10rpx;
+  font-size: 25rpx;
+  background-color:  #F8F8FF;
+}
+
+.order-group .order-group-item .tip-cancel{
+  padding-left: 650rpx;
+  padding-bottom: 10rpx;
+  font-size: 25rpx;
+  background-color:  #F8F8FF;
+}
+
+.order-group .order-group-item .tip-finish{
+  padding-left: 650rpx;
+  padding-bottom: 10rpx;
+  font-size: 25rpx;
+  background-color:  #F8F8FF;
+}
+
+.order-group .order-group-item .tip-online{
+  padding-left: 660rpx;
+  padding-bottom: 10rpx;
+  font-size: 25rpx;
+  background-color:  #F8F8FF;
+}
+
+.order-group .do-group{
+  display: flex;
+  font-size: 25rpx;
+  margin-left: 530rpx;
+  padding-top: 10rpx;
+  background-color:  #F8F8FF;
+}
+
+.do-group .cancel-order{
+  border: solid 3rpx;
+  border-radius: 12rpx;
+  background-color: white;
+  font-size: 25rpx;
+  color: black;
+  padding: 5rpx 5rpx;
+  margin-right: 3rpx;
+}
+
+.do-group .confrim-order{
+  border: solid 3rpx;
+  border-radius: 12rpx;
+  background-color: white;
+  font-size: 25rpx;
+  color: black;
+  padding: 5rpx 5rpx;
+}
+
+.do-group .pay{
+  border: solid 3rpx;
+  border-radius: 12rpx;
+  background-color: white;
+  font-size: 25rpx;
+  color: black;
+  padding: 5rpx 5rpx;
+  margin-left: 38rpx;
+}
+
+.active{
+  color:green;
+}
